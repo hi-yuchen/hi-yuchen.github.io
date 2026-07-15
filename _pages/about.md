@@ -8,7 +8,7 @@ description: "Yu Chen is a Lecturer at Zhejiang University of Finance and Econom
   <section class="home-grid" aria-labelledby="home-title">
     <div class="portrait-column">
       <div class="portrait-frame">
-        <img class="portrait" src="{{ '/images/yu-chen.jpg' | relative_url }}" alt="Portrait of Yu Chen" width="880" height="1174" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <img class="portrait" src="{{ '/images/yu-chen.jpg' | relative_url }}" alt="Portrait of Yu Chen" width="1280" height="1920" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
         <div class="portrait-fallback" hidden aria-label="Yu Chen">YC</div>
       </div>
       <div class="contact-block">
