@@ -1,0 +1,45 @@
+---
+permalink: /research/
+title: "Research"
+description: "Publications and current research by Yu Chen."
+---
+
+<main id="main-content" class="page inner-page">
+  <header class="page-intro">
+    <p class="eyebrow"><span class="lang-en">Research output</span><span class="lang-zh">研究成果</span></p>
+    <h1><span class="lang-en">Research</span><span class="lang-zh">研究</span></h1>
+    <p><span class="lang-en">Research on long-term care, health, and labor markets.</span><span class="lang-zh">研究主要关注长期护理、健康与劳动市场。</span></p>
+  </header>
+
+  {% assign groups = "published,under_review,working_papers" | split: "," %}
+  {% for group in groups %}
+    {% assign papers = site.data.research[group] %}
+    <section class="publication-section" aria-labelledby="{{ group }}-title">
+      <div class="section-heading">
+        <h2 id="{{ group }}-title">
+          {% if group == "published" %}<span class="lang-en">Published</span><span class="lang-zh">已发表</span>{% endif %}
+          {% if group == "under_review" %}<span class="lang-en">Under Review</span><span class="lang-zh">在审论文</span>{% endif %}
+          {% if group == "working_papers" %}<span class="lang-en">Working Papers</span><span class="lang-zh">工作论文</span>{% endif %}
+        </h2>
+        <span>0{{ papers.size }}</span>
+      </div>
+      <ol class="publication-list">
+        {% for paper in papers %}
+          <li class="publication-item">
+            <article>
+              <h3>{% if paper.doi %}<a href="{{ paper.doi }}" target="_blank" rel="noreferrer">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
+              <p class="authors">{{ paper.authors }}</p>
+              <p class="publication-meta">
+                {% if paper.venue %}<em>{{ paper.venue }}</em>{% endif %}
+                {% if paper.venue and paper.year %}<span aria-hidden="true"> · </span>{% endif %}
+                {% if paper.year %}{{ paper.year }}{% endif %}
+                {% if paper.status_en %}<span class="lang-en">{{ paper.status_en }}</span><span class="lang-zh">{{ paper.status_zh }}</span>{% endif %}
+              </p>
+              {% if paper.doi %}<a class="paper-link" href="{{ paper.doi }}" target="_blank" rel="noreferrer"><span class="lang-en">Paper</span><span class="lang-zh">论文链接</span> ↗</a>{% endif %}
+            </article>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+  {% endfor %}
+</main>

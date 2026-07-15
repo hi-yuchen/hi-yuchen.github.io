@@ -1,12 +1,40 @@
 ---
-layout: archive
-title: "Teaching"
 permalink: /teaching/
-author_profile: true
+title: "Teaching"
+description: "Courses and teaching experience of Yu Chen."
 ---
 
-{% include base_path %}
+<main id="main-content" class="page inner-page">
+  <header class="page-intro">
+    <p class="eyebrow"><span class="lang-en">Courses & instruction</span><span class="lang-zh">课程与教学</span></p>
+    <h1><span class="lang-en">Teaching</span><span class="lang-zh">教学</span></h1>
+    <p><span class="lang-en">Courses taught in the School of Public Administration at ZUFE.</span><span class="lang-zh">浙江财经大学公共管理学院的课程教学。</span></p>
+  </header>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+  <section class="teaching-section" aria-labelledby="current-courses">
+    <div class="section-heading">
+      <h2 id="current-courses"><span class="lang-en">Current Courses</span><span class="lang-zh">主讲课程</span></h2>
+      <span>01</span>
+    </div>
+    <ul class="course-list">
+      {% for course in site.data.teaching.current %}
+        <li><span class="lang-en">{{ course.en }}</span><span class="lang-zh">{{ course.zh }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="teaching-section" aria-labelledby="previous-teaching">
+    <div class="section-heading">
+      <h2 id="previous-teaching"><span class="lang-en">Previous Teaching Experience</span><span class="lang-zh">过往教学经历</span></h2>
+      <span>02</span>
+    </div>
+    <ul class="experience-list">
+      {% for item in site.data.teaching.previous %}
+        <li>
+          <span><span class="lang-en">{{ item.en }}</span><span class="lang-zh">{{ item.zh }}</span></span>
+          <time><span class="lang-en">{{ item.term_en }}</span><span class="lang-zh">{{ item.term_zh }}</span></time>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>
