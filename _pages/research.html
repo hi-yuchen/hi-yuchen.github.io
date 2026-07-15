@@ -11,7 +11,7 @@ description: "Publications and current research by Yu Chen."
     <p><span class="lang-en">Research on long-term care, health, and labor markets.</span><span class="lang-zh">研究主要关注长期护理、健康与劳动市场。</span></p>
   </header>
 
-  {% assign groups = "published,under_review,working_papers" | split: "," %}
+  {% assign groups = "published,working_papers" | split: "," %}
   {% for group in groups %}
     {% assign papers = site.data.research[group] %}
     <section class="publication-section" aria-labelledby="{{ group }}-title">
