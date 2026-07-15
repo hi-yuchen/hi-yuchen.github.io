@@ -29,8 +29,8 @@ description: "Yu Chen is a Lecturer at Zhejiang University of Finance and Econom
 
       <section class="bio" aria-labelledby="bio-title">
         <h2 id="bio-title">Bio</h2>
-        <p class="lang-en">Yu Chen is a Lecturer in the School of Public Administration at Zhejiang University of Finance and Economics. His research lies at the intersection of health economics, labor economics, and social policy, with a particular focus on long-term care insurance and the care workforce. He studies how social insurance programs shape health care utilization, labor demand, and household welfare using administrative records, online job postings, and quasi-experimental methods.</p>
-        <p class="lang-zh">陈宇，浙江财经大学公共管理学院讲师。研究领域包括健康经济学、劳动经济学与社会保障，重点关注长期护理保险和护理劳动力市场。他主要利用行政记录、在线招聘数据和准实验方法，研究社会保险制度如何影响医疗服务利用、劳动力需求与家庭福利。</p>
+        <p class="lang-en">I am a Lecturer in the School of Public Administration at Zhejiang University of Finance and Economics. My research lies at the intersection of health economics, labor economics, and social policy, with a particular focus on long-term care insurance and the care workforce. I study how social insurance programs shape health care utilization, labor demand, and household welfare using administrative records, online job postings, and quasi-experimental methods.</p>
+        <p class="lang-zh">我是浙江财经大学公共管理学院讲师。研究领域包括健康经济学、劳动经济学与社会保障，重点关注长期护理保险和护理劳动力市场。我主要利用行政记录、在线招聘数据和准实验方法，研究社会保险制度如何影响医疗服务利用、劳动力需求与家庭福利。</p>
       </section>
 
       <section class="interests" aria-labelledby="interests-title">
